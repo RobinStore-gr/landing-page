@@ -1,5 +1,4 @@
 import React from 'react'
-import { isMobile } from 'react-device-detect'
 
 export default function WhatWeDo() {
   return (
