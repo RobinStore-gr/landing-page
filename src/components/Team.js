@@ -28,7 +28,7 @@ export default function Team() {
 
     return (
     <div style={{ position:'relative', height: 'fit-content', pointerEvents: 'none'}} id="OurTeam">
-        <div style={{left: isMobile ? 0:214, top: isMobile ? 0:180, position: isMobile ? 'relative':'absolute', color: 'black', fontSize: 48, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word', textAlign: 'center'}}>Our Team</div>
+        <div style={{left: isMobile ? 0:214, top: isMobile ? 0:180, position: isMobile ? 'relative':'absolute', color: 'black', fontSize: 48, fontWeight: '700', wordWrap: 'break-word', textAlign: 'center'}}>Our Team</div>
     
         <div style={{ 
             display: 'flex',
