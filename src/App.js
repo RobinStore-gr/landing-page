@@ -2,7 +2,6 @@ import Home from './components/Home';
 import WhatWeDo from './components/WhatWeDo';
 import Team from './components/Team';
 import './App.css';
-import './font.css';
 import { useEffect, useRef } from 'react';
 
 function App() {
