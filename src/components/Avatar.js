@@ -2,9 +2,36 @@ import React from 'react'
 
 export default function Avatar({ name, img }) {
   return (
-    <div style={{width: 230, height: 'fit-content', top: 0, position: 'relative', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end', gap: 29, display: 'inline-flex', margin: '2em'}}>
-        <img style={{width: 230, height: 230, borderRadius: 9999}} src={img} alt={name} />
-        <div style={{color: 'white', fontSize: 32, fontWeight: '400', wordWrap: 'break-word', textAlign:'center'}}>{ name }</div>
+    <div 
+      style={{
+        width: 200, 
+        height: 300,
+        top: 0, 
+        display: 'flex',
+        position: 'relative', 
+        flexDirection: 'column', 
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+      }}>
+        <img 
+          style={{
+            width: 200, 
+            height: 200, 
+            borderRadius: '50%', 
+            boxShadow: '0px 0px 10px 0px rgba(50,50,50,0.35)', 
+            background: 'white',
+            marginBottom: '2em',
+          }} src={img} alt={name} />
+        <div 
+          style={{
+            color: 'white', 
+            fontSize: 28, 
+            fontFamily: 'Coolvetica',
+            fontWeight: '400', 
+            wordWrap: 'break-word', 
+            textAlign:'center'
+          }}>{ name.split(' ')[0]} <br></br> {name.split(' ')[1]}
+        </div>
     </div>
   )
 }

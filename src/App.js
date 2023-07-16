@@ -7,13 +7,13 @@ import './App.css';
 function App() {
   return (
     <div style={{
-      width: '100vw',
+      // width: '100vw',
       height: 'fit-content',
       position: 'relative',
-      background: 'linear-gradient(112deg, #1FD35F 0%, rgba(138.13, 255, 179.68, 0.66) 100%, rgba(138.13, 255, 179.68, 0.66) 100%)',
+      // background: 'linear-gradient(112deg, #1FD35F 0%, rgba(138.13, 255, 179.68, 0.66) 100%, rgba(138.13, 255, 179.68, 0.66) 100%)',
       overflowX: 'hidden',
       }}>
-      <Header />
+      {/* <Header /> */}
     
       <Home />
       <WhatWeDo />
