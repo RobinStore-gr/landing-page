@@ -8,7 +8,7 @@ export default function WhatWeDo() {
     //     <div style={{left: 0, top: 282, position: 'absolute', color: 'black', fontSize: 48, fontWeight: '700', wordWrap: 'break-word', textAlign: 'center', width: '100vw'}}>What we do</div>
     //     <div style={{left: 0, top: 445, position: 'absolute', color: 'black', fontSize: 48, fontWeight: '700', wordWrap: 'break-word', textAlign: 'center', width: '100vw'}}>placeholder</div>
     // </div>
-    <div 
+    <section 
       style={{ 
         position:'relative', 
         height: '100vh', 
@@ -18,11 +18,10 @@ export default function WhatWeDo() {
       }} id="Home">
       <div
         style={{
-          height: '200px',
-          position: 'absolute',
-          top: '0',
+          height: isMobile ? '150px' : '250px',
+          position: 'relative',
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'flex-end',
           alignItems: 'center',
           textAlign: 'center',
           fontSize: '50px',
@@ -39,11 +38,12 @@ export default function WhatWeDo() {
           flexDirection: isMobile ? 'column' : 'row',
           justifyContent: 'space-evenly',
           alignItems: 'center',
+          gap: isMobile ? '1em' : '5em',
         }}>
-        <IconTile text="We collect product prices in real time from supermarkets"/>
-        <IconTile text="You create a list of the products you want to buy"/>
-        <IconTile text="We help you reduce the total amount you would pay "/>
+        <IconTile icon="storefront" text="1. We collect product prices in real time from supermarkets"/>
+        <IconTile icon="shopping_cart" text="2. You create a list of the products you want to buy"/>
+        <IconTile icon="attach_money" text="3. We help you reduce the total amount you would pay "/>
       </div>
-    </div>
+    </section>
   )
 }

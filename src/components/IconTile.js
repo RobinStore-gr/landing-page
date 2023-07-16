@@ -1,28 +1,43 @@
 import React from "react";
+import { isMobile } from "react-device-detect";
 
-export default function IconTile({ text }) {
+export default function IconTile({ icon, text }) {
     return (
         <div 
           style={{
-            width: '250px',
-            height: 'fit-content',
+            width: '25em',
+            height: '20em',
             flexDirection: 'column',
-            justifyContent: 'center',
+            display: 'flex',
             alignItems: 'center',
-            gap: '40px',
-            display: 'inline-flex',
+            fontSize: isMobile ? '10px' : '15px',
           }}>
-          <img style={{width: '100px', height: '100px', borderRadius: '10px'}} src="https://via.placeholder.com/150x150" />
-          <div 
-            style={{
-              width: '250px',
-              textAlign: 'center',
-              color: 'black',
-              fontSize: '30px',
-              fontFamily: 'Coolvetica',
-              fontWeight: '400',
-              wordWrap: 'break-word',
-            }}>{text}
+            <div 
+                style={{
+                    height: '50%',
+                    backgroundColor: 'white',
+                }}>
+                <i class="material-icons" 
+                    style={{
+                        backgroundColor: "black",
+                        padding: "20px",
+                        borderRadius: "10px",
+                        color: "#1ED35F", 
+                        fontSize: "3.5em"
+                    }}>{icon}
+                </i>
+            </div>
+            <div 
+                style={{
+                // width: '8em',
+                height: '50%',
+                textAlign: 'center',
+                color: 'black',
+                fontSize: isMobile ? '23px' : '30px',
+                fontFamily: 'Coolvetica',
+                fontWeight: '400',
+                wordWrap: 'break-word',
+                }}>{text}
             </div>
         </div>
     )

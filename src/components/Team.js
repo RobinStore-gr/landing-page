@@ -27,19 +27,19 @@ export default function Team() {
     const avatars = team.map(({ name, img }, index) => <Avatar name={name} img={img} key={index} />)
 
     return (
-        <div 
+        <section 
             style={{ 
                 position:'relative', 
-                height: '100vh',
+                height: isMobile ? 'inherit' : '100vh',
                 display: 'flex',
                 flexDirection: 'column',
-                padding: '0em 10em',
+                padding: isMobile ? '0' : '0em 10em',
             }} id="OurTeam">
             <div
                 style={{
                     height: '200px',
                     display: 'flex',
-                    justifyContent: 'flex-start',
+                    justifyContent: isMobile ? 'center' : 'flex-start',
                     alignItems: 'flex-end',
                     textAlign: 'center',
                     fontSize: '50px',
@@ -60,11 +60,11 @@ export default function Team() {
                     backgroundColor: '#1ED35F',
                     borderRadius: '20px 20px 0px 0px',
                     boxShadow: '0px 0px 10px 0px rgba(50,50,50,0.35)',
-                    gap: '2em',
+                    paddingTop: isMobile ? '5em' : '0',
                 }}>
                 {avatars}
             </div>
-        </div>
+        </section>
 
     // <div style={{ position:'relative', height: 'fit-content', pointerEvents: 'none'}} id="OurTeam">
     //     <div style={{left: isMobile ? 0:214, top: isMobile ? 0:180, position: isMobile ? 'relative':'absolute', color: 'black', fontSize: 48, fontWeight: '700', wordWrap: 'break-word', textAlign: 'center'}}>Our Team</div>
