@@ -55,10 +55,8 @@ export default function Home() {
             position: 'relative',
             top: isMobile ? '160px' : '0px',
           }}>
-          {/* <Gradient dir="top-to-bottom" from="#000000" to="#FFFFFF"> */}
           Your walk to the supermarket could be cheaper and easier. <br/>
           Just with a bit of help
-          {/* </Gradient> */}
         </div>
         <a style={{pointerEvents: isMobile ? 'all' : 'none'}} href='https://app.robinstore.gr'>
         <button
@@ -84,6 +82,7 @@ export default function Home() {
             scale: isMobile ? '0.65' : '1',
             objectPosition: '0px 150px',
             display: isMobile ? 'flex' : 'none',
+            pointerEvents: 'none',
           }}
           src={RobinMobile} alt="Robin Store Logo on a Mobile Screen">
         </img>
