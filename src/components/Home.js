@@ -1,7 +1,5 @@
 import React from 'react'
 
-import RobinStoreMobile from '../assets/RobinStoreMobile.png';
-import RobinStoreLaptop from '../assets/RobinStoreLaptop.png';
 import RobinStoreLogo from '../assets/robin-logo-white-512.png';
 import RobinMobile from '../assets/robin-mobile.png';
 import { isMobile } from 'react-device-detect';

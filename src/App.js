@@ -1,4 +1,3 @@
-import Header from './components/Header';
 import Home from './components/Home';
 import WhatWeDo from './components/WhatWeDo';
 import Team from './components/Team';
