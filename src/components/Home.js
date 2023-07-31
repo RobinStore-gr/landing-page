@@ -27,7 +27,7 @@ export default function Home() {
       <div 
         style={{
           flex: isMobile ? 0 : 2,
-          background: '#1ED35F',
+          background: '#1DB954',
           height: '100%',
           flexDirection: 'column',
           display: 'flex',
@@ -94,7 +94,7 @@ export default function Home() {
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
-          background: isMobile ? '#1ED35F' : 'white',
+          background: isMobile ? '#1DB954' : 'white',
         }}>
         <img 
           style={{

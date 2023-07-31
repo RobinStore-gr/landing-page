@@ -22,7 +22,7 @@ export default function IconTile({ icon, text }) {
                         backgroundColor: "black",
                         padding: "20px",
                         borderRadius: "10px",
-                        color: "#1ED35F", 
+                        color: "#1DB954", 
                         fontSize: "3.5em"
                     }}>{icon}
                 </i>
