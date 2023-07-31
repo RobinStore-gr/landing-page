@@ -27,7 +27,7 @@ export default function Home() {
       <div 
         style={{
           flex: isMobile ? 0 : 2,
-          background: '#1ED35F',
+          background: '#1DB954',
           height: '100%',
           flexDirection: 'column',
           display: 'flex',
@@ -56,7 +56,6 @@ export default function Home() {
             top: isMobile ? '160px' : '0px',
           }}>
           Your walk to the supermarket could be cheaper and easier. <br/>
-          Just with a bit of help
         </div>
         <a style={{pointerEvents: isMobile ? 'all' : 'none'}} href='https://app.robinstore.gr'>
         <button
@@ -95,7 +94,7 @@ export default function Home() {
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
-          background: isMobile ? '#1ED35F' : 'white',
+          background: isMobile ? '#1DB954' : 'white',
         }}>
         <img 
           style={{
