@@ -56,7 +56,6 @@ export default function Home() {
             top: isMobile ? '160px' : '0px',
           }}>
           Your walk to the supermarket could be cheaper and easier. <br/>
-          Just with a bit of help
         </div>
         <a style={{pointerEvents: isMobile ? 'all' : 'none'}} href='https://app.robinstore.gr'>
         <button
