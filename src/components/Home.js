@@ -26,13 +26,14 @@ export default function Home() {
       }} id="Home">
       <div 
         style={{
-          flex: isMobile ? 0 : 2,
+          flex: isMobile ? 1 : 2,
           background: '#1DB954',
           height: '100%',
           flexDirection: 'column',
           display: 'flex',
-          justifyContent: isMobile ? 'space-between' : 'center',
+          justifyContent: isMobile ? 'start' : 'center',
           alignItems: 'center',
+          paddingTop: isMobile ? '170px' : '0',
         }}>
         <img src={RobinStoreLogo} alt="Robin Store Logo on a Mobile Screen" 
           style={{
@@ -52,36 +53,41 @@ export default function Home() {
             color: 'white',
             fontFamily: 'Coolvetica',
             fontWeight: '400',
-            position: 'relative',
-            top: isMobile ? '160px' : '0px',
+            // position: 'relative',
+            // top: isMobile ? '160px' : '0px',
           }}>
           Your walk to the supermarket could be cheaper and easier. <br/>
         </div>
-        <a style={{pointerEvents: isMobile ? 'all' : 'none'}} href='https://app.robinstore.gr'>
-        <button
-          style={{
-            padding: isMobile ? '15px 20px' : '15px 35px',
-            borderRadius: '10px',
-            background: 'white',
-            border: 'none',
-            marginTop: '50px',
-            fontSize: '20px',
-            fontFamily: 'Coolvetica',
-            fontWeight: '400',
-            boxShadow: '0px 0px 10px 0px rgba(50,50,50,0.35)',
-            cursor: 'pointer',
-            position: 'relative',
-            top: isMobile ? '160px' : '0px',
-          }}>
-            {isMobile ? "Try RobinStore" : "Coming soon"}
-        </button>
+        {/* <a style={{pointerEvents: isMobile ? 'all' : 'none'}} href='https://app.robinstore.gr'> */}
+        <a href='https://forms.gle/rZbi6P6uPjihhTq49'>
+          <button
+            style={{
+              padding: isMobile ? '15px 20px' : '15px 35px',
+              borderRadius: '10px',
+              background: 'white',
+              border: 'none',
+              marginTop: '50px',
+              fontSize: '20px',
+              fontFamily: 'Coolvetica',
+              fontWeight: '400',
+              boxShadow: '0px 0px 10px 0px rgba(50,50,50,0.35)',
+              cursor: 'pointer',
+              // position: 'relative',
+              // top: isMobile ? '160px' : '0px',
+            }}>
+              {/* {isMobile ? "Try RobinStore" : "Coming soon"} */}
+              {isMobile ? "Join Waitlist 😊" : "Join Waitlist 😊"}
+          </button>
         </a>
         <img 
           style={{
+            position: 'absolute',
+            bottom: '-100px',
             scale: isMobile ? '0.65' : '1',
             objectPosition: '0px 150px',
             display: isMobile ? 'flex' : 'none',
             pointerEvents: 'none',
+            overflow: 'visible',
           }}
           src={RobinMobile} alt="Robin Store Logo on a Mobile Screen">
         </img>

@@ -59,7 +59,7 @@ function App() {
       <section ref={registerSectionRef} id="WhatWeDo">
         <WhatWeDo />
       </section>
-      <section ref={registerSectionRef} id="OurTeam">
+      <section id="OurTeam">
         <Team />
       </section>
 
