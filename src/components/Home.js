@@ -33,7 +33,7 @@ export default function Home() {
           display: 'flex',
           justifyContent: isMobile ? 'start' : 'center',
           alignItems: 'center',
-          paddingTop: isMobile ? '170px' : '0',
+          paddingTop: isMobile ? '18vh' : '0',
         }}>
         <img src={RobinStoreLogo} alt="Robin Store Logo on a Mobile Screen" 
           style={{
@@ -46,7 +46,7 @@ export default function Home() {
         }}/>
         <div 
           style={{
-            width: '55%',
+            width: '70%',
             textAlign: 'center',
             fontSize: isMobile ? '30px' : '50px',
             // color: 'linear-gradient(0, #FFFFFF, #EBEDEE)',
@@ -66,7 +66,7 @@ export default function Home() {
               borderRadius: '10px',
               background: 'white',
               border: 'none',
-              marginTop: '50px',
+              marginTop: '4vh',
               fontSize: '20px',
               fontFamily: 'Coolvetica',
               fontWeight: '400',
