@@ -58,6 +58,7 @@ export default function Team() {
                     justifyContent: 'space-evenly',
                     alignItems: 'center',
                     backgroundColor: '#1DB954',
+                    background: 'linear-gradient(0, #41e17a,#1aa34a, #1DB954)',
                     borderRadius: '20px 20px 0px 0px',
                     boxShadow: '0px 0px 10px 0px rgba(50,50,50,0.35)',
                     paddingTop: isMobile ? '5em' : '0',

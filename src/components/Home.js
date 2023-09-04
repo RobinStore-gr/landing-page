@@ -1,6 +1,7 @@
 import React from 'react'
 
-import RobinStoreLogo from '../assets/robin-logo-white-512.png';
+// import RobinStoreLogo from '../assets/robin-logo-white-512.png';
+import RobinStoreLogo from '../assets/logo-white-transparent.png';
 import RobinMobile from '../assets/robin-mobile.png';
 import { isMobile } from 'react-device-detect';
 
@@ -27,7 +28,8 @@ export default function Home() {
       <div 
         style={{
           flex: isMobile ? 1 : 2,
-          background: '#1DB954',
+          // background: '#1DB954',
+          background: 'linear-gradient(0, #41e17a,#1aa34a, #1DB954)',
           height: '100%',
           flexDirection: 'column',
           display: 'flex',
@@ -35,15 +37,39 @@ export default function Home() {
           alignItems: 'center',
           paddingTop: isMobile ? '18vh' : '0',
         }}>
-        <img src={RobinStoreLogo} alt="Robin Store Logo on a Mobile Screen" 
-          style={{
-            position: 'absolute',
-            top: isMobile ? '10px' : '20px',
-            left: isMobile ? '20px' : '50px',
-            width: '100px',
-            height: '100px',
-            scale: isMobile ? '0.8' : '1',
-        }}/>
+        <div style={{
+          position: 'absolute',
+          top: isMobile ? '10px' : '20px',
+          left: isMobile ? '0px' : '50px',
+          scale: isMobile ? '0.6' : '1',
+          height: '100px',
+          display: 'flex',
+          justifyContent: 'start',
+          alignItems: 'center',
+          flexDirection: 'row',
+        }}>
+          <img src={RobinStoreLogo} alt="Robin Store Logo on a Mobile Screen" 
+            style={{
+              // position: 'absolute',
+              // top: isMobile ? '10px' : '20px',
+              // left: isMobile ? '20px' : '50px',
+              width: '100px',
+              height: '100px',
+              paddingRight: '20px',
+              // scale: isMobile ? '0.8' : '1',
+          }}/>
+          <span
+            style={{
+              width: '70%',
+              textAlign: 'center',
+              fontSize: isMobile ? '50px' : '50px',
+              color: 'white',
+              fontFamily: 'Coolvetica',
+              fontWeight: '400',
+            }}>
+              RobinStore
+          </span>
+        </div>
         <div 
           style={{
             width: '70%',
@@ -56,7 +82,7 @@ export default function Home() {
             // position: 'relative',
             // top: isMobile ? '160px' : '0px',
           }}>
-          Your walk to the supermarket could be cheaper and easier. <br/>
+          Your walk to the supermarket could be <span style={{color: 'black'}}>Cheaper</span> and <span style={{color: 'black'}}>Easier</span>. <br/>
         </div>
         {/* <a style={{pointerEvents: isMobile ? 'all' : 'none'}} href='https://app.robinstore.gr'> */}
         <a href='https://forms.gle/rZbi6P6uPjihhTq49'>
