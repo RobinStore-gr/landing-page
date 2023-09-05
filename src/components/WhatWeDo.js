@@ -1,7 +1,7 @@
 import React from 'react'
 import { isMobile } from 'react-device-detect';
-import IconTile from './IconTile';
-import RobinStoreLogo from '../assets/logo-color-transparent.png';
+// import IconTile from './IconTile';
+// import RobinStoreLogo from '../assets/logo-color-transparent.png';
 import Step1 from '../assets/step-1.png';
 import Step2 from '../assets/step-2.png';
 import Step3 from '../assets/step-3.png';
